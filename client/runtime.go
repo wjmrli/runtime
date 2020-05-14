@@ -390,8 +390,10 @@ func (r *Runtime) Submit(operation *runtime.ClientOperation) (interface{}, error
 		return nil, err
 	}
 	req.URL.Scheme = r.pickScheme(operation.Schemes)
-	req.URL.Host = r.Host
-	req.Host = r.Host
+	if req.URL.Host == "" {
+		req.URL.Host = r.Host
+	}
+	req.Host = req.URL.Host
 
 	r.clientOnce.Do(func() {
 		r.client = &http.Client{
