@@ -12,7 +12,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/go-openapi/runtime/middleware/header"
+	"github.com/wjmrli/runtime/middleware/header"
 )
 
 // NegotiateContentEncoding returns the best offered content encoding for the

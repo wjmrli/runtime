@@ -26,7 +26,7 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/go-openapi/runtime"
+	"github.com/wjmrli/runtime"
 )
 
 // type email struct {

@@ -26,7 +26,7 @@ import (
 	swaggerspec "github.com/go-openapi/spec"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/go-openapi/runtime"
+	"github.com/wjmrli/runtime"
 )
 
 func stubAutenticator() runtime.Authenticator {

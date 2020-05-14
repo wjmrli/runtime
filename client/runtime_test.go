@@ -36,7 +36,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/go-openapi/runtime"
+	"github.com/wjmrli/runtime"
 )
 
 // task This describes a task. Tasks require a content property to be set.

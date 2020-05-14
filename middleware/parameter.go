@@ -29,7 +29,7 @@ import (
 	"github.com/go-openapi/swag"
 	"github.com/go-openapi/validate"
 
-	"github.com/go-openapi/runtime"
+	"github.com/wjmrli/runtime"
 )
 
 const defaultMaxMemory = 32 << 20

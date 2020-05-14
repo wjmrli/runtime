@@ -18,7 +18,7 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/go-openapi/runtime"
+	"github.com/wjmrli/runtime"
 
 	"gopkg.in/yaml.v2"
 )

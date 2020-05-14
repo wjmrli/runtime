@@ -26,9 +26,9 @@ import (
 	"github.com/go-openapi/loads/fmts"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/go-openapi/runtime"
-	"github.com/go-openapi/runtime/internal/testing/petstore"
-	"github.com/go-openapi/runtime/middleware/untyped"
+	"github.com/wjmrli/runtime"
+	"github.com/wjmrli/runtime/internal/testing/petstore"
+	"github.com/wjmrli/runtime/middleware/untyped"
 )
 
 type stubBindRequester struct {

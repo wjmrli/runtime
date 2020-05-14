@@ -21,7 +21,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/go-openapi/runtime/internal/testing/petstore"
+	"github.com/wjmrli/runtime/internal/testing/petstore"
 )
 
 func TestSecurityMiddleware(t *testing.T) {

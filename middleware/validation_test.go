@@ -24,8 +24,8 @@ import (
 	"github.com/go-openapi/errors"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/go-openapi/runtime"
-	"github.com/go-openapi/runtime/internal/testing/petstore"
+	"github.com/wjmrli/runtime"
+	"github.com/wjmrli/runtime/internal/testing/petstore"
 )
 
 func newTestValidation(ctx *Context, next http.Handler) http.Handler {
