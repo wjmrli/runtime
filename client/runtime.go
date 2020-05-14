@@ -385,13 +385,19 @@ func (r *Runtime) Submit(operation *runtime.ClientOperation) (interface{}, error
 		return nil, fmt.Errorf("none of producers: %v registered. try %s", r.Producers, cmt)
 	}
 
-	req, err := request.buildHTTP(cmt, r.BasePath, r.Producers, r.Formats, auth)
+	basePath := operation.BasePath
+	if basePath == "" {
+		basePath = r.BasePath
+	}
+	req, err := request.buildHTTP(cmt, basePath, r.Producers, r.Formats, auth)
 	if err != nil {
 		return nil, err
 	}
 	req.URL.Scheme = r.pickScheme(operation.Schemes)
-	if req.URL.Host == "" {
+	if operation.Host == "" {
 		req.URL.Host = r.Host
+	} else {
+		req.URL.Host = operation.Host
 	}
 	req.Host = req.URL.Host
 

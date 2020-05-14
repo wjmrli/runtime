@@ -32,6 +32,8 @@ type ClientOperation struct {
 	Reader             ClientResponseReader
 	Context            context.Context
 	Client             *http.Client
+	Host               string
+	BasePath           string
 }
 
 // A ClientTransport implementor knows how to submit Request objects to some destination
