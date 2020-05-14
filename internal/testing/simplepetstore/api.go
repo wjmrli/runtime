@@ -23,9 +23,9 @@ import (
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/loads"
 
-	"github.com/go-openapi/runtime"
-	"github.com/go-openapi/runtime/middleware"
-	"github.com/go-openapi/runtime/middleware/untyped"
+	"github.com/wjmrli/runtime"
+	"github.com/wjmrli/runtime/middleware"
+	"github.com/wjmrli/runtime/middleware/untyped"
 )
 
 // NewPetstore creates a new petstore api handler

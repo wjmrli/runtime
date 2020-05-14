@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/go-openapi/runtime/middleware/denco"
+	"github.com/wjmrli/runtime/middleware/denco"
 )
 
 func testHandlerFunc(w http.ResponseWriter, r *http.Request, params denco.Params) {

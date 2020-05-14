@@ -17,7 +17,7 @@ package security
 import (
 	"net/http"
 
-	"github.com/go-openapi/runtime"
+	"github.com/wjmrli/runtime"
 )
 
 // Authorized provides a default implementation of the Authorizer interface where all

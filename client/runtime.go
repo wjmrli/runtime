@@ -33,9 +33,9 @@ import (
 
 	"github.com/go-openapi/strfmt"
 
-	"github.com/go-openapi/runtime"
-	"github.com/go-openapi/runtime/logger"
-	"github.com/go-openapi/runtime/middleware"
+	"github.com/wjmrli/runtime"
+	"github.com/wjmrli/runtime/logger"
+	"github.com/wjmrli/runtime/middleware"
 )
 
 // TLSClientOptions to configure client authentication with mutual TLS

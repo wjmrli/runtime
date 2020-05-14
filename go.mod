@@ -1,4 +1,4 @@
-module github.com/go-openapi/runtime
+module github.com/wjmrli/runtime
 
 require (
 	github.com/docker/go-units v0.4.0

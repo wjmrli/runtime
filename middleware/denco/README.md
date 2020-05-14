@@ -14,7 +14,7 @@ However, Denco is optimized and some features added.
 
 ## Installation
 
-    go get -u github.com/go-openapi/runtime/middleware/denco
+    go get -u github.com/wjmrli/runtime/middleware/denco
 
 ## Using as HTTP request multiplexer
 
@@ -26,7 +26,7 @@ import (
     "log"
     "net/http"
 
-    "github.com/go-openapi/runtime/middleware/denco"
+    "github.com/wjmrli/runtime/middleware/denco"
 )
 
 func Index(w http.ResponseWriter, r *http.Request, params denco.Params) {
@@ -59,7 +59,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/go-openapi/runtime/middleware/denco"
+	"github.com/wjmrli/runtime/middleware/denco"
 )
 
 type route struct {
@@ -93,13 +93,13 @@ func main() {
 }
 ```
 
-See [Godoc](http://godoc.org/github.com/go-openapi/runtime/middleware/denco) for more details.
+See [Godoc](http://godoc.org/github.com/wjmrli/runtime/middleware/denco) for more details.
 
 ## Getting the value of path parameter
 
 You can get the value of path parameter by 2 ways.
 
-1. Using [`denco.Params.Get`](http://godoc.org/github.com/go-openapi/runtime/middleware/denco#Params.Get) method
+1. Using [`denco.Params.Get`](http://godoc.org/github.com/wjmrli/runtime/middleware/denco#Params.Get) method
 2. Find by loop
 
 ```go
@@ -108,7 +108,7 @@ package main
 import (
     "fmt"
 
-    "github.com/go-openapi/runtime/middleware/denco"
+    "github.com/wjmrli/runtime/middleware/denco"
 )
 
 func main() {
@@ -172,7 +172,7 @@ Denco has some limitations below.
 
 ## Benchmarks
 
-    cd $GOPATH/github.com/go-openapi/runtime/middleware/denco
+    cd $GOPATH/github.com/wjmrli/runtime/middleware/denco
     go test -bench . -benchmem
 
 ## License
